@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>haykaltazanni</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: #081021;
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 90px;
+    }
+
+    nav .logo {
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 45px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #8ab8ff;
+      transition: .3s;
+      font-size: 16px;
+    }
+
+    nav ul li a:hover {
+      color: #1fa0ff;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 90px;
+      min-height: 80vh;
+    }
+
+    .text-box {
+      max-width: 550px;
+      animation: fadeSlideLeft 1.3s ease;
+    }
+
+    .text-box h1 {
+      font-size: 60px;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .text-box h2 {
+      font-size: 34px;
+      color: #1495ff;
+      margin: 10px 0 0 0;
+    }
+
+    .text-box p {
+      margin-top: 20px;
+      color: #abc4e2;
+      line-height: 1.7;
+    }
+
+    .btns {
+      margin-top: 35px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn1 {
+      background: #1495ff;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      color: white;
+      transition: .3s;
+    }
+
+    .btn1:hover {
+      background: #0b75cc;
+    }
+
+    .btn2 {
+      border: 2px solid #1495ff;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #1495ff;
+      font-weight: 600;
+      transition: .3s;
+    }
+
+    .btn2:hover {
+      background: #1495ff;
+      color: white;
+    }
+
+    .hero-img img {
+      width: 420px;
+      border-radius: 10px;
+      animation: fadeSlideRight 1.3s ease;
+      background-color: #1b2838;
+    }
+
+    @keyframes fadeSlideLeft {
+      0% { opacity: 0; transform: translateX(-40px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeSlideRight {
+      0% { opacity: 0; transform: translateX(40px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    @media (max-width: 900px) {
+      nav { padding: 25px 40px; }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+      }
+
+      .text-box h1 { font-size: 45px; }
+      .text-box h2 { font-size: 26px; }
+
+      .hero-img img { width: 320px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">haykal.</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">gamers</a></li>
+      <li><a href="#">cool</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+
+    <div class="text-box">
+      <h1>Hi, I'm haykal</h1>
+      <h2>mahasiswa</h2>
+
+      <p>
+        Education is not just going to school and getting a degree. But, it is also about expanding knowledge and absorbing life sciences.
+      </p>
+
+      <div class="btns">
+        <a class="btn1" href="https://vt.tiktok.com/ZSfoJvd9u/">Hire Me</a>
+        <a class="btn2" href="https://www.instagram.com/p/DNAqfQ9yvD_wHAVNDYjdXElySdqau4agaycqWU0/?igsh=bzM2NXlseHd3cjh3">Let's Talk</a>
+      </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="profil.jpeg" alt="Profile">
+
+    </div>
+
+  </section>
+
+</body>
+</html>
